@@ -150,6 +150,15 @@
                                 </div>
                             </div>
                             <!-- END Div for MoodMirror Thumbnail -->
+                            <!-- START Div for PkSim Thumbnail -->
+                            <div class="project-entry">
+                                <div class="col-lg-4 col-sm-8">
+                                    <a href="#pksimmodal" data-toggle="modal">
+                                        <img src="img/thumb/pksim.png" class="img-responsive" alt="PkSim The Bot: An IRC Deathmatch Bot">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- END Div for PkSim Thumbnail -->
                         </div>
                     </div>
                 </div>
@@ -457,6 +466,81 @@
                 </div>
             </div>
             <!-- END MoodMirror Popup Modal -->
+            <!-- START PkSim Popup Modal -->
+            <div id="pksimmodal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content project-modal">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title">PkSim The Bot</h2>
+                            <h4 class="modal-title project-modal-date">2015 - Present</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/screenshots/pksim.png" class="img-responsive img-centered" alt="">
+                            <p>
+                                PkSim is a RuneScape-based deathmatch bot on the SwiftIRC network that I began as a personal project.
+                                I believe I had the idea around the end of summer 2014 and I slowly wrote it during my sophomore year of college
+                                in my free time.
+                            </p>
+                            <p>
+                                Essentially, it is a text-based fighting bot based off of the popular MMORPG
+                                <a href="http://runescape.com" target="_blank">RuneScape</a>. Players will take turns
+                                attacking with different weapons of 3 class styles (melee, ranged, magic) to try to defeat
+                                their opponent. Upon defeating their opponent, the winner is awarded a sum of coins to buy weapons
+                                at the shop or just to save up for ranking on the
+                                <a href="http://www.pksimthebot.com/highscores/" target="_blank">highscore tables</a>.
+                            </p>
+                            <p>
+                                I initially started writing this project because I used to have a lot of fun playing a game like this on
+                                IRC called <a href="http://idmbot.khhq.net/" target="_blank">iDM</a>, but has since been shutdown.
+                                I knew that <a href="http://www.mirc.com/" target="_blank">mIRC</a>, the client I used to connect to IRC,
+                                had a built-in scripting language that was pretty easy to pick up. It was pretty easy to get a
+                                rudimentary version of the fighting bot working, but I knew it could be improved. I spent a lot of time in
+                                the #mSL channel learning about better ways to go about scripting my bot, and I started using hash tables
+                                for the bulk of the data storage.
+                            </p>
+                            <p>
+                                However, I had bigger plans for this. I wanted a web interface for checking highscores. I had to learn
+                                a bit of PHP and SQL to sync the bot's hash tables with a web database and provide functionality for the user
+                                to lookup their own account, sort by wins/losses, check total coins generated to date, etc.
+                            </p>
+                            <p>
+                                Another goal I had for the project was to be able to run it on a low power device. mIRC is a Windows-exclusive
+                                program, and I didn't really want to have a dedicated computer running Windows 24/7 just to have the bot running.
+                                Instead, I turned to the embedded development board world: similar to the
+                                <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a>, Hardkernel manufactures small,
+                                open-source development boards called <a href="http://www.hardkernel.com/main/main.php" target="_blank">Odroids</a>.
+                                These boards run different Linux distributions and Android, but that still didn't solve my problem.
+                                Windows applications can be run through <a href="https://www.winehq.org/" target="_blank">Wine</a> on Linux,
+                                but the Odroids still have ARM processors - not x86. Luckily for me, Eltechs had just recently released
+                                <a href="https://eltechs.com/product/exagear-desktop/" target="_blank">ExaGear Desktop</a> which runs an x86
+                                virtual machine on an ARM processor. This allowed me to install both Wine and mIRC on the x86 virtual machine,
+                                bringing my dreams of a (super) low-powered IRC bot server to life.
+                            </p>
+                            <p>
+                                The project ended up being a lot larger than I originally thought it would be (and it's still not finished!)
+                                but I hope to release a fairly stable version soon. There are still some things left to do before I can officially
+                                call it a stable build, but it's close. I learned a LOT throughout the course of developing it, and it was definitely
+                                a fun project.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    <a href="http://pksimthebot.com" class="btn btn-default btn-lg" target="_blank">
+                                        <i class="fa fa-rocket fa-fw"></i>
+                                        <span class="network-name">Site</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END PkSim Popup Modal -->
 
             <!-- Footer -->
             <footer>
