@@ -1,0 +1,5 @@
+# SFTP Config file for Atom's Remote-FTP Plugin #
+.ftpconfig
+
+# Mac OS X Directory Services File #
+.DS_Store
